@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_playstation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.vishnu.projectwork.playstation"
+    tools:showIn="@layout/activity_playstation">
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewflipper">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="342dp"
+        app:srcCompat="@drawable/playstationone"
+        android:id="@+id/imageView1"
+        android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/playstationtwo"
+            android:id="@+id/imageView2"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/playstationthree"
+            android:id="@+id/imageView3"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/playstationfour"
+            android:id="@+id/imageView4"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/playstationsix"
+            android:id="@+id/imageView5"
+            android:scaleType="centerCrop"/>
+
+
+
+
+    </ViewFlipper>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Next"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/next"
+    android:background="@color/wallet_link_text_light" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:id="@+id/previous"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/wallet_link_text_light" />
+
+    <Button
+        android:text="More Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_above="@+id/next"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_red_dark" />
+
+    <Button
+        android:text="purchase Here"
+        android:layout_height="wrap_content"
+        android:id="@+id/purchase"
+        android:layout_width="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark" />
+
+    <Button
+        android:text="Purchase At Store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_above="@+id/previous"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark" />
+
+</RelativeLayout>

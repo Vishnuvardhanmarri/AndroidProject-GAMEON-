@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewflipper">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="405dp"
+            app:srcCompat="@drawable/xboxone"
+            android:id="@+id/imageView1"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/xboxtwo"
+            android:id="@+id/imageView2"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/xboxthree"
+            android:id="@+id/imageView3"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/xboxfour"
+            android:id="@+id/imageView4"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/xboxfive"
+            android:id="@+id/imageView5"
+            android:scaleType="centerCrop"/>
+
+
+
+
+    </ViewFlipper>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/next"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:id="@+id/previous"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary" />
+    <Button
+        android:text="More Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_above="@+id/next"
+        android:layout_alignParentEnd="true"
+        android:background="?android:attr/colorActivatedHighlight" />
+
+
+    <Button
+        android:text="Purchase At Store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_above="@+id/previous"
+        android:layout_alignParentStart="true"
+        android:background="?android:attr/colorPrimaryDark" />
+
+    <Button
+        android:text="Purchase Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/purchase"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark" />
+
+</RelativeLayout>

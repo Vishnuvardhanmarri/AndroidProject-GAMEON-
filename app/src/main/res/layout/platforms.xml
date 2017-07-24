@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Please choose a platform."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listview5"
+        android:layout_height="260dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Confused Between Xbox and Playstation Check The Video Bellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_weight="0.00"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@+id/listview5"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/video"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_below="@+id/listview5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+</RelativeLayout>
